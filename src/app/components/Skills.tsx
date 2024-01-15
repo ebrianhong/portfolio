@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 
 import HTML from '../../../public/html.png';
 import CSS from '../../../public/css.png';
@@ -8,7 +8,7 @@ import Tailwind from '../../../public/tailwind.png';
 import NextJs from '../../../public/next.svg';
 import Image from 'next/image';
 
-const Skills = () => {
+const Skills:FC = () => {
   return (
     <div className='w-full h-screen bg-[#cfcfcf] text-gray-300'>
       {/* Container */}

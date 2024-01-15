@@ -1,21 +1,18 @@
 import React, { FC } from 'react'
+import { JobProps } from '../interfaces/interfaces'
 
-interface JobInterface {
-  company: string,
-  startDate: string,
-  endDate: string,
-  role: string
-}
 
-const Job:FC<JobInterface> = (job)  => {
-  console.log(job)
+const Job:FC<JobProps> = (job)  => {
   return (
-    <ul className='text-[#000000]'> 
-      <li>{job.company}</li>
-      <li>{job.startDate}</li>
-      <li>{job.endDate}</li>
-      <li>{job.role}</li>
-    </ul>
+    <div className='flex justify-between text-[#000000] text-sm mx-3 sm:w-1/2'> 
+      <div>
+        <p className='font-bold'>{job.company}</p>
+        <p className='italic'>{job.role}</p>
+      </div>
+      <div>
+        <p>{job.startDate} - {job.endDate}</p>
+      </div>
+    </div>
   )
 }
 

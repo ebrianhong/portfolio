@@ -1,40 +1,39 @@
 import React, { FC } from 'react'
-import Job from './Job'
+import JobPage from './Job'
+import { JobProps } from '../interfaces/interfaces'
 
-interface JobInterface {
-  company: string,
-  startDate: string,
-  endDate: string,
-  role: string
-}
-
-const jobs: JobInterface[] = [
+const jobs: JobProps[] = [
   {
     company: 'LinkedIn',
     startDate: 'sep 2022',
     endDate: 'nov 2023',
-    role: 'UI Frontend Engineer'
+    role: 'UI Frontend Engineer',
+    description: ''
   },
   {
     company: 'Age of Learning',
     startDate: 'aug 2018',
     endDate: 'aug 2022',
-    role: 'Software Engineer II'
+    role: 'Software Engineer II',
+    description: ''
   },
   {
     company: 'Radial3D',
     startDate: 'jul 2018',
     endDate: 'aug 2023',
-    role: 'Software Engineering Intern'
+    role: 'Software Engineering Intern',
+    description: ''
   },
 ]
 
 const Experience:FC = () => {
   return (
-    <div className='w-full h-screen bg-[#cfcfcf] text-gray-300'>
-      {jobs.map(job => {
-        return <Job key={job.company} {...job}></Job>
-      })}
+    <div className='flex justify-center align-middle w-full h-screen bg-[#cfcfcf] text-gray-300'>
+      <div className='sm:w-[1000px]'> 
+        {jobs.map(job => {
+          return <JobPage key={job.company} {...job}></JobPage>
+        })}
+      </div>
     </div>
   )
 }
