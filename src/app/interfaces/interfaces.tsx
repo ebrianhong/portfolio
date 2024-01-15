@@ -3,5 +3,5 @@ export interface JobProps {
   startDate: string,
   endDate: string,
   role: string
-  description: string
+  description: Array<string>
 }

@@ -27,8 +27,12 @@ body {
 }
 
 @layer base {
-  li {
-    @apply px-4;
-    @apply cursor-pointer
+  h1 {
+    @apply text-4xl sm:text-7xl;
+  }
+
+  h2 {
+    @apply text-2xl sm:text-3xl;
+    @apply mb-3
   }
 }
