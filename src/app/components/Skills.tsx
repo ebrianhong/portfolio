@@ -10,13 +10,12 @@ import Image from 'next/image';
 
 const Skills:FC = () => {
   return (
-    <div className='w-full h-screen bg-[#cfcfcf] text-gray-300'>
+    <div className='w-full bg-[#cfcfcf] text-[#000000]'>
       {/* Container */}
-      <div className='max-w-[1000px] mx-auto p-12 flex flex-col justify-center w-full h-full'>
-        <div>
-          <p className='text-4xl font-bold inline border-b-4 border-teal-600 '>Skills</p>
-          <p className='py-4'>These are some of the frontend technologies I have worked with</p>
-        </div>
+      <div className='max-w-[800px] mx-auto flex flex-col justify-center w-full h-full'>
+        
+        <h2 className='self-start text-2xl sm:text-4xl mb-8'>Skills</h2>
+
 
         <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8'>
           <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>

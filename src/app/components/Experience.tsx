@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 import JobPage from './Job'
 import { JobProps } from '../interfaces/interfaces'
+import { BsFillPersonLinesFill } from 'react-icons/bs'
 
 const jobs: JobProps[] = [
   {
@@ -43,11 +44,14 @@ const jobs: JobProps[] = [
 const Experience:FC = () => {
   return (
     <div className='flex flex-col items-center w-full bg-[#cfcfcf] text-[#000000]'>
-      <div className='flex flex-col items-center sm:w-[800px] mx-3 sm:mx-0 '> 
+      <div className='flex flex-col items-center sm:w-[800px] mx-3 sm:mx-0 mb-20'> 
         <h2 className='self-start text-2xl sm:text-4xl mb-8'>Professional Experience</h2>
         {jobs.map(job => {
           return <JobPage key={job.company} {...job}></JobPage>
         })}
+        <a href='/Resume_Hong_Brian.pdf' className='flex justify-start items-center w-full' target='_blank' rel='noreferrer'>
+          <BsFillPersonLinesFill size={30} className='mr-3' /> Download my resume
+        </a>
       </div>
     </div>
   )

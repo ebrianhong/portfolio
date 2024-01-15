@@ -1,7 +1,5 @@
 import React, { FC } from 'react'
 import {
-  FaBars,
-  FaTimes,
   FaGithub,
   FaLinkedin,
 } from 'react-icons/fa';
@@ -25,12 +23,12 @@ const Socials:FC = () => {
           </a>
         </li>
         <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#5a5a5a] px-4'>
-          <a className='flex justify-between items-center w-full text-gray-300' href='/' target='_blank' rel='noreferrer'>
+          <a className='flex justify-between items-center w-full text-gray-300' href='mailto:ebrianhong@gmail.com' target='_blank' rel='noreferrer'>
             Email <HiOutlineMail size={30} />
           </a>
         </li>
         <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#5a5a5a] px-4'>
-          <a className='flex justify-between items-center w-full text-gray-300' href='/' target='_blank' rel='noreferrer'>
+          <a className='flex justify-between items-center w-full text-gray-300' href='/Resume_Hong_Brian.pdf' target='_blank' rel='noreferrer'>
             Resume <BsFillPersonLinesFill size={30} />
           </a>
         </li>
