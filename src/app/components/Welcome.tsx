@@ -8,8 +8,8 @@ const calculate = () => {
 
 const Welcome:FC = () => {
   return (
-    <div className='w-full h-screen bg-[#cfcfcf]'>
-      <div className='max-w-[1000px] mx-auto px-12 flex flex-col justify-center h-full'>
+    <div id='home' className='w-full h-screen bg-[#cfcfcf]'>
+      <div className='max-w-[1000px] mx-auto px-5 sm:px-16 flex flex-col justify-center h-full'>
         <div className='flex justify-center align-center mb-10 flex-col sm:flex-row'>
           <div className='mr-10 w-100 sm:w-1/2'>
             <h1 className='font-light text-[#000000] text-left sm:text-right'>

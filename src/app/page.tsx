@@ -1,13 +1,13 @@
 import Experience from "./components/Experience";
-import Socials from "./components/Socials";
 import Skills from "./components/Skills";
 import Welcome from "./components/Welcome";
 import { FC } from "react";
+import NavBar from "./components/NavBar";
 
 const Home:FC = () => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <Socials></Socials>
+      <NavBar></NavBar>
       <Welcome></Welcome>
       <Experience></Experience>
       <Skills></Skills>

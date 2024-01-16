@@ -19,7 +19,7 @@ const Skills:FC = () => {
 
         <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8'>
           <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-            <Image className='w-20 mx-auto' src={JavaScript} alt="HTML icon" />
+            <Image className='w-20 mt-5 mx-auto' src={JavaScript} alt="HTML icon" />
             <p className='my-4'>JAVASCRIPT</p>
           </div>
           <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
