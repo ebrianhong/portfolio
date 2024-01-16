@@ -43,14 +43,16 @@ const jobs: JobProps[] = [
 
 const Experience:FC = () => {
   return (
-    <div className='flex flex-col items-center w-full bg-[#cfcfcf] text-[#000000]'>
+    <div id='experience' className='flex flex-col items-center w-full bg-[#cfcfcf] text-[#000000]'>
       <div className='flex flex-col items-center sm:max-w-[800px] sm:px-16 px-5 mb-20'> 
-        <h2 className='self-start text-2xl sm:text-3xl lg:text-4xl mb-8'>Professional Experience</h2>
-        {jobs.map(job => {
-          return <JobPage key={job.company} {...job}></JobPage>
-        })}
-        <a href='/Resume_Hong_Brian.pdf' className='flex justify-end items-center w-full' target='_blank' rel='noreferrer'>
-          <BsFillPersonLinesFill size={30} className='mr-3' /> Download my resume
+        <h2 className='self-start text-2xl sm:text-3xl lg:text-4xl my-20'>Professional Experience</h2>
+        <div>
+          {jobs.map(job => {
+            return <JobPage key={job.company} {...job}></JobPage>
+          })}
+        </div>
+        <a href='/Resume_Hong_Brian.pdf' className='flex justify-end self-end items-center hover:scale-110 hover:text-[#0077b5] duration-300' target='_blank' rel='noreferrer'>
+          <BsFillPersonLinesFill size={30} className='mr-3' />Download my resume
         </a>
       </div>
     </div>

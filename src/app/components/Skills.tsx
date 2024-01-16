@@ -1,51 +1,26 @@
-import React, { FC } from 'react';
+import React, { FC } from 'react'
+import Skill from './Skill'
 
-import HTML from '../../../public/html.png';
-import CSS from '../../../public/css.png';
-import JavaScript from '../../../public/javascript.png';
-import ReactImg from '../../../public/react.png';
-import Tailwind from '../../../public/tailwind.png';
-import NextJs from '../../../public/next.svg';
-import Image from 'next/image';
 
-const Skills:FC = () => {
+  const languages =['JavaScript', 'TypeScript', 'HTML', 'CSS']
+  const frontend = ['React', 'Redux', 'Next.js', 'Ember', 'Vue', 'Web Components', 'lit-HTML (Polymer)', 'Tailwind CSS']
+  const backend = ['Node.js', 'PHP', 'Rest API', 'GraphQL', 'SQL (PostgreSQL, MySQL)', 'NoSQL (MongoDB)', 'Redis']
+  const tools = ['Git', 'npm', 'Docker', 'VS Code', 'Test Driven Development (Jest, Mocha, Chai, QUnit)', 'AWS', 'Jenkins', 'Gitlab CI (Continuous Integration)', 'Cloudfront CDN (Continuous Delivery Network)', 'Agile', 'Figma']
+
+const TechnicalSkills:FC = () => {
   return (
-    <div className='w-full bg-[#cfcfcf] text-[#000000]'>
-      {/* Container */}
-      <div className='max-w-[800px] mx-auto flex flex-col justify-center w-full h-full'>
-        
-        <h2 className='self-start text-2xl sm:text-4xl mb-8'>Skills</h2>
-
-
-        <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8'>
-          <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-            <Image className='w-20 mt-5 mx-auto' src={JavaScript} alt="HTML icon" />
-            <p className='my-4'>JAVASCRIPT</p>
-          </div>
-          <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-            <Image className='w-20 mx-auto' src={HTML} alt="HTML icon" />
-            <p className='my-4'>HTML</p>
-          </div>
-          <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-            <Image className='w-20 mx-auto' src={CSS} alt="HTML icon" />
-            <p className='my-4'>CSS</p>
-          </div>
-          <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-            <Image className='w-20 mx-auto' src={ReactImg} alt="HTML icon" />
-            <p className='my-4'>REACT</p>
-          </div>
-          <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-            <Image className='w-20 mx-auto' src={Tailwind} alt="HTML icon" />
-            <p className='my-4'>TAILWIND CSS</p>
-          </div>
-          <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-            <Image className='w-20 mx-auto' src={NextJs} alt="HTML icon" />
-            <p className='my-4'>NEXT.JS</p>
-          </div>
+    <div className='flex flex-col items-center w-full bg-[#cfcfcf] text-[#000000]'>
+      <div className='flex flex-col items-center sm:max-w-[800px] sm:px-16 px-5 mb-40'> 
+        <h2 className='self-start text-2xl sm:text-3xl lg:text-4xl mb-8'>Technical Skills</h2>
+        <div>
+          <Skill skill={'Languages'} skills={languages}></Skill>
+          <Skill skill={'Frontend'} skills={frontend}></Skill>
+          <Skill skill={'Backend'} skills={backend}></Skill>
+          <Skill skill={'Development Tools'} skills={tools}></Skill>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Skills;
+export default TechnicalSkills

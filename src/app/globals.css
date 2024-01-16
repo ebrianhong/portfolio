@@ -20,4 +20,8 @@ html {
     @apply text-2xl sm:text-3xl;
     @apply mb-3
   }
+  
+  h3 {
+    @apply font-semibold text-lg
+  }
 }

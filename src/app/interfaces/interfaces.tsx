@@ -5,3 +5,10 @@ export interface JobProps {
   role: string
   description: Array<string>
 }
+
+export interface SkillsProps {
+  languages: Array<string>,
+  frontend: Array<string>,
+  backend: Array<string>
+  tools: Array<string>
+}

@@ -1,11 +1,14 @@
 'use client'
 
 import React, { FC, useState } from 'react'
-import { JobProps } from '../interfaces/interfaces'
 import { IoIosArrowDown } from "react-icons/io";
 
+type SkillProps = {
+  skill: string,
+  skills: Array<string>
+}
 
-const Job:FC<JobProps> = (job)  => {
+const Skill:FC<SkillProps> = ({skill, skills}: {skill: string, skills:Array<string>})  => {
   const [open, setOpen] = useState<boolean>(false); 
   return (
     <div className='text-[#000000] text-sm mb-5 w-full border-b-2 border-zinc-400 last:border-none cursor-pointer' onClick={() => {setOpen(!open)}}>
@@ -13,21 +16,17 @@ const Job:FC<JobProps> = (job)  => {
         <IoIosArrowDown size={30} className={`mr-3  ${open ? 'rotate-180' : 'rotate-0'}`}></IoIosArrowDown>
         <div className='flex justify-between w-full'>
           <div className=''>
-            <p className='font-semibold text-lg'>{job.company}</p>
-            <p className='italic'>{job.role}</p>
-          </div>
-          <div>
-            <p>{job.startDate} - {job.endDate}</p>
+            <p className='font-semibold text-lg'>{skill}</p>
           </div>
         </div>
       </div>
-      <ol className={`transition-all overflow-hidden duration-300 mb-4 ml-8 ${open ? 'max-h-screen' : 'max-h-0'}`}>
-        {job.description.map((description, i) => {
-          return <li key={i} className='list-disc ml-5' >{description}</li>
+      <div className={`transition-all overflow-hidden duration-300 mb-4 ml-8 ${open ? 'max-h-screen' : 'max-h-0'}`}>
+        {skills.map((skill, i) => {
+          return <span key={i} >{skill}, </span>
         })}
-      </ol>
+      </div>
     </div>
   )
 }
 
-export default Job
+export default Skill
