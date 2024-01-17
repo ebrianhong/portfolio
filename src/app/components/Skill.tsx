@@ -2,11 +2,7 @@
 
 import React, { FC, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
-
-type SkillProps = {
-  skill: string;
-  skills: Array<string>;
-};
+import { SkillProps } from "../interfaces/interfaces";
 
 const Skill: FC<SkillProps> = ({
   skill,
