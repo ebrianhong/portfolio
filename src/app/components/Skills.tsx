@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import Skill from "./Skill";
 
 const languages = ["JavaScript", "TypeScript", "HTML", "CSS"];
@@ -35,7 +35,7 @@ const tools = [
   "Figma",
 ];
 
-const TechnicalSkills: FC = () => {
+const TechnicalSkills = () => {
   return (
     <div className="flex w-full flex-col items-center bg-[#cfcfcf] text-[#000000]">
       <div className="mb-40 flex flex-col items-center px-5 sm:max-w-[800px] sm:px-16">

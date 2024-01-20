@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import { SlArrowDownCircle } from "react-icons/sl";
 import Link from "next/link";
 
@@ -8,7 +8,7 @@ const calculate = () => {
   return year - 2019;
 };
 
-const Welcome: FC = () => {
+const Welcome = () => {
   return (
     <div id="home" className="h-screen w-full bg-[#cfcfcf]">
       <div className="relative mx-auto flex h-full max-w-[1000px] flex-col items-center justify-center px-5 sm:px-16">

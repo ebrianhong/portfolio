@@ -1,12 +1,12 @@
 "use client";
 
-import React, { FC } from "react";
+import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
 
-const NavBar: FC = () => {
+const NavBar = () => {
   return (
     <div className="fixed -bottom-0.5 z-10 flex w-full flex-row text-white sm:left-0 sm:top-[35%] sm:w-0 sm:flex-col">
       <Link

@@ -1,10 +1,10 @@
 "use client";
 
-import React, { FC, useState } from "react";
+import React, { useState } from "react";
 import { JobProps } from "../interfaces/interfaces";
 import { IoIosArrowDown } from "react-icons/io";
 
-const Job: FC<JobProps> = (job) => {
+const Job = (job: JobProps) => {
   const [open, setOpen] = useState<boolean>(false);
   return (
     <div

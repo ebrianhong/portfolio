@@ -1,16 +1,10 @@
 "use client";
 
-import React, { FC, useState } from "react";
+import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { SkillProps } from "../interfaces/interfaces";
 
-const Skill: FC<SkillProps> = ({
-  skill,
-  skills,
-}: {
-  skill: string;
-  skills: Array<string>;
-}) => {
+const Skill = ({ skill, skills }: SkillProps) => {
   const [open, setOpen] = useState<boolean>(false);
   return (
     <div

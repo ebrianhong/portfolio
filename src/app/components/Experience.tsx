@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import JobPage from "./Job";
 import { JobProps } from "../interfaces/interfaces";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -41,7 +41,7 @@ const jobs: JobProps[] = [
   },
 ];
 
-const Experience: FC = () => {
+const Experience = () => {
   return (
     <div
       id="experience"
