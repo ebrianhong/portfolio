@@ -25,10 +25,9 @@ const Welcome = () => {
             </div>
             <div>
               <p className="text-[#000000]">
-                Hello, I am a <span className="italic">Frontend Engineer</span>{" "}
-                from Los Angeles with {calculate()}+ years of professional
-                experience and a strong foundation in frontend technologies. I
-                am passionate about writing clean and concise code and
+                Hello! I am a Software Engineer with {calculate()}+ years of
+                experience (<span className="italic">frontend emphasis)</span>.
+                I am passionate about writing clean and concise code and
                 delivering fast, reliable, and inclusive web experiences for
                 users.
               </p>
