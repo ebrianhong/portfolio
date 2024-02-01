@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { SkillProps } from "../interfaces/interfaces";
 
-const Skill = ({ skill, skills }: SkillProps) => {
+const Skill = ({ skillName, skillList }: SkillProps) => {
   const [open, setOpen] = useState<boolean>(false);
   return (
     <div
@@ -20,14 +20,14 @@ const Skill = ({ skill, skills }: SkillProps) => {
         ></IoIosArrowDown>
         <div className="flex w-full justify-between">
           <div className="">
-            <p className="text-lg font-semibold">{skill}</p>
+            <p className="text-lg font-semibold">{skillName}</p>
           </div>
         </div>
       </div>
       <div
         className={`mb-4 ml-8 overflow-hidden transition-all duration-300 ${open ? "max-h-screen" : "max-h-0"}`}
       >
-        {skills.map((skill, i) => {
+        {skillList.map((skill, i) => {
           return <span key={i}>{skill}, </span>;
         })}
       </div>

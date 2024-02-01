@@ -1,39 +1,6 @@
 import React from "react";
 import Skill from "./Skill";
-
-const languages = ["JavaScript", "TypeScript", "HTML", "CSS"];
-const frontend = [
-  "React",
-  "Redux",
-  "Next.js",
-  "Ember",
-  "Vue",
-  "Web Components",
-  "lit-HTML (Polymer)",
-  "Tailwind CSS",
-];
-const backend = [
-  "Node.js",
-  "PHP",
-  "Rest API",
-  "GraphQL",
-  "SQL (PostgreSQL, MySQL)",
-  "NoSQL (MongoDB)",
-  "Redis",
-];
-const tools = [
-  "Git",
-  "npm",
-  "Docker",
-  "VS Code",
-  "Test Driven Development (Jest, Mocha, Chai, QUnit)",
-  "AWS",
-  "Jenkins",
-  "Gitlab CI (Continuous Integration)",
-  "Cloudfront CDN (Continuous Delivery Network)",
-  "Agile",
-  "Figma",
-];
+import { SKILLS } from "../constants";
 
 const TechnicalSkills = () => {
   return (
@@ -43,10 +10,13 @@ const TechnicalSkills = () => {
           Technical Skills
         </h2>
         <div>
-          <Skill skill={"Languages"} skills={languages}></Skill>
-          <Skill skill={"Frontend"} skills={frontend}></Skill>
-          <Skill skill={"Backend"} skills={backend}></Skill>
-          <Skill skill={"Development Tools"} skills={tools}></Skill>
+          <Skill skillName={"Languages"} skillList={SKILLS.LANGUAGES}></Skill>
+          <Skill skillName={"Frontend"} skillList={SKILLS.FRONTEND}></Skill>
+          <Skill skillName={"Backend"} skillList={SKILLS.BACKEND}></Skill>
+          <Skill
+            skillName={"Development Tools"}
+            skillList={SKILLS.TOOLS}
+          ></Skill>
         </div>
       </div>
     </div>

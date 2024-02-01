@@ -7,6 +7,6 @@ export interface JobProps {
 }
 
 export interface SkillProps {
-  skill: string;
-  skills: Array<string>;
+  skillName: string;
+  skillList: Array<string>;
 }

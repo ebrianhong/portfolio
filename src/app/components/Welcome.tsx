@@ -1,12 +1,7 @@
 import React from "react";
 import { SlArrowDownCircle } from "react-icons/sl";
 import Link from "next/link";
-
-const calculate = () => {
-  const year = new Date().getFullYear();
-
-  return year - 2019;
-};
+import calculateYear from "../helpers/calculate-year";
 
 const Welcome = () => {
   return (
@@ -25,7 +20,7 @@ const Welcome = () => {
             </div>
             <div>
               <p className="text-[#000000]">
-                Hello! I am a Software Engineer with {calculate()}+ years of
+                Hello! I am a Software Engineer with {calculateYear()}+ years of
                 experience (<span className="italic">frontend emphasis)</span>.
                 I am passionate about writing clean and concise code and
                 delivering fast, reliable, and inclusive web experiences for
