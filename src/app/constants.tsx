@@ -45,25 +45,25 @@ export const NAVBAR_BUTTONS = [
     NAME: "LinkedIn",
     HREF: "https://www.linkedin.com/in/bghong/",
     ICON: FaLinkedin,
-    COLOR: "#0077b5",
+    COLOR: "hover:bg-[#0077b5]",
   },
   {
     NAME: "Github",
     HREF: "https://github.com/ebrianhong",
     ICON: FaGithub,
-    COLOR: "#000000",
+    COLOR: "hover:bg-[#000000]",
   },
   {
     NAME: "Email",
     HREF: "mailto:ebrianhong@gmail.com",
     ICON: HiOutlineMail,
-    COLOR: "#e45656",
+    COLOR: "hover:bg-[#e45656]",
   },
   {
     NAME: "Resume",
     HREF: "/Resume_Hong_Brian.pdf",
     ICON: BsFillPersonLinesFill,
-    COLOR: "#2eac65",
+    COLOR: "hover:bg-[#2eac65]",
   },
 ];
 

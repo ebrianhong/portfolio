@@ -13,7 +13,7 @@ const NavBar = () => {
         return (
           <Link
             key={button.NAME}
-            className={`flex h-[60px] w-[160px] items-center justify-center bg-[#5a5a5a] px-4 duration-300 hover:bg-[${button.COLOR}] sm:ml-[-100px] sm:justify-between lg:hover:ml-[-10px]`}
+            className={`flex h-[60px] w-[160px] items-center justify-center bg-[#5a5a5a] px-4 duration-300 ${button.COLOR} sm:ml-[-100px] sm:justify-between lg:hover:ml-[-10px]`}
             href={button.HREF}
             target="_blank"
             rel="noreferrer"
